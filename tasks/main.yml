@@ -1,0 +1,11 @@
+# This file is subject to the terms and conditions defined in file 'LICENSE',
+# which is part of this repository.
+---
+- name: Include distribution specific vagrant tasks
+  include: "vagrant-{{ ansible_os_family }}.yml"
+
+- name: Include vagrant tasks
+  include: vagrant.yml
+
+- name: Include distribution specific virtualbox tasks
+  include: "virtualbox-{{ ansible_os_family }}.yml"
