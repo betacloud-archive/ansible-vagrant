@@ -3,6 +3,13 @@
 ![Ansible 2.2](https://img.shields.io/badge/Ansible-2.2-green.png?style=flat)
 ![Ansible 2.3](https://img.shields.io/badge/Ansible-2.3-green.png?style=flat)
 
+Notes
+-----
+
+* This role will not install the VirtualBox extension pack. Get it from
+  https://www.virtualbox.org/wiki/Downloads and install it with
+  ``vboxmanage extpack install TARBALL``.
+
 License
 -------
 
