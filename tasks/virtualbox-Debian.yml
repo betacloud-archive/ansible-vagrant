@@ -15,6 +15,6 @@
 
 - name: Install virtualbox
   package:
-    name: virtualbox
+    name: virtualbox-5.1
     state: present
   become: true
