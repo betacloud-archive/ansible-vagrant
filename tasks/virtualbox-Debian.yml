@@ -1,9 +1,7 @@
-# This file is subject to the terms and conditions defined in file 'LICENSE',
-# which is part of this repository.
 ---
 - name: Add virtualbox repository
   apt_repository:
-    repo: "deb http://download.virtualbox.org/virtualbox/debian {{ ansible_distribution_release }} contrib"
+    repo: "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian {{ ansible_distribution_release }} contrib"
     state: present
   become: true
 
@@ -15,6 +13,6 @@
 
 - name: Install virtualbox
   package:
-    name: virtualbox-5.1
+    name: "{{ virtualbox_packagename }}"
     state: present
   become: true

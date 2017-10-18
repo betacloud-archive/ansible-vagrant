@@ -1,3 +1,20 @@
 ---
+##########################
+# vagrant
+
 vagrant_plugins: []
 vagrant_version: 2.0.0
+
+##########################
+# virtualbox
+
+# NOTE: virtualbox 5.2 is not supported by vagrant
+
+# Vagrant has detected that you have a version of VirtualBox installed
+# that is not supported by this version of Vagrant. Please install one of
+# the supported versions listed below to use Vagrant:
+
+# 4.0, 4.1, 4.2, 4.3, 5.0, 5.1
+
+virtualbox_version: 5.1
+virtualbox_packagename: "virtualbox-{{ virtualbox_version }}"

@@ -1,8 +1,6 @@
-# This file is subject to the terms and conditions defined in file 'LICENSE',
-# which is part of this repository.
 ---
 - name: Install vagrant
   apt:
-    deb: "https://releases.hashicorp.com/vagrant/{{ vagrant_version }}/vagrant_{{ vagrant_version }}_x86_64.deb"
+    deb: "http://releases.hashicorp.com/vagrant/{{ vagrant_version }}/vagrant_{{ vagrant_version }}_x86_64.deb"
     state: present
   become: true
